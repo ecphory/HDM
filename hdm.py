@@ -1,7 +1,7 @@
 # HDM: Holographic Declarative Memory
 # A module for Python ACT-R
-# written by Matthew A. Kelly
-# except for the parts written by Terry Stewart
+# written by M. A. Kelly
+# except for the parts written by Terry C. Stewart
 # Based on original research and the memory models
 # BEAGLE (Jones & Mewhort, 2007) and DSHM (Rutledge-Taylor, Kelly, West, & Pyke, 2014)
 #
