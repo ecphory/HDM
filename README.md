@@ -14,7 +14,7 @@ To install HDM for use on your own computer, use one of the two following method
 
 EASY INSTALL
 
-1. Download the CCMSuite repository for Python 2 ACT-R and HDM from https://github.com/MatthewAKelly/ccmsuite
+1. Download the CCMSuite repository for Python 2 ACT-R and HDM from https://github.com/ecphory/ccmsuite
 
 2. Add the CCMSuite folder to your Python Path. For instructions on how to set the Python Path see this link: https://www.techwalla.com/articles/how-to-set-your-python-path
 
@@ -24,7 +24,7 @@ EASY INSTALL
 
 LESS EASY INSTALL
 
-1. Downloaded the official Python ACT-R for Python 2 from https://github.com/tcstewar/ccmsuite or for Python 3 from https://github.com/sterlingsomers/ccmsuite
+1. Downloaded the official Python ACT-R for Python 2 from https://github.com/tcstewar/ccmsuite
 
 2. Download hdm.py from this repository and place it in ccmsuite/ccm/lib/actr/hdm.py
 
