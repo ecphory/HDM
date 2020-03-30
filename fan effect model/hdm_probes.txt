@@ -1,0 +1,13 @@
+hippie in park
+hippie in church    
+hippie in bank   
+captain in park    
+captain in cave    
+debutante in bank   
+fireman in park  
+giant in beach
+giant in castle    
+giant in dungeon    
+earl in castle    
+earl in forest   
+lawyer in store
