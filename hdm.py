@@ -152,8 +152,8 @@ class HDM(Memory):
         query = copy.deepcopy(chunkList)
         # replace p's value with ? in query, but leave slot as is
         query[p][1] = '?'
-        print chunkList[p][1]
-        print query
+        print(chunkList[p][1])
+        print(query)
         # compute chunk vector
         chunkVector = self.getUOGwithSlots(query)
         # update memory
@@ -320,9 +320,9 @@ class HDM(Memory):
      highestCosine = self.threshold
      bestMatch = 'none'
      if self.verbose:
-        print 'Query is: ' + chunk
-        print 'inhibited values: ' + str(self.inhibited)
-        print 'Finst contains: ' + str(self.finst.obj)
+        print('Query is: ' + chunk)
+        print('inhibited values: ' + str(self.inhibited))
+        print('Finst contains: ' + str(self.finst.obj))
      # find the best match to the query vector in memory
      for mem,memVec in self.mem.items():
         # skip inhibited values
@@ -331,22 +331,22 @@ class HDM(Memory):
             if (not require_new) or (not self.finst.contains(mem)):
                 thisCosine = memVec.compare(queryVec)
                 if self.verbose:
-                    print mem, thisCosine
+                    print(mem, thisCosine)
                 if thisCosine > highestCosine:
                     highestCosine = thisCosine 
                     bestMatch = mem
 
      if bestMatch == 'none':
         if self.verbose:
-            print 'No matches found above threshold of cosine =', self.threshold
+            print('No matches found above threshold of cosine =', self.threshold)
         self.fail(self._request_count)
      else:
          # replace the placeholder '?' with the retrieved memory 'bestMatch'
          chunk = chunk.replace('?',bestMatch)
          if self.verbose:
-            print 'Best match is ' + bestMatch
-            print 'with a cosine of ' + str(highestCosine)
-            print 'output chunk = ' + chunk
+            print('Best match is ' + bestMatch)
+            print('with a cosine of ' + str(highestCosine))
+            print('output chunk = ' + chunk)
          chunkObj = Chunk(chunk)
          chunkObj.activation = highestCosine
          self.finst.add(bestMatch)
@@ -355,12 +355,12 @@ class HDM(Memory):
   # performs multiple queries to determine the "coherence" of the chunk
   def resonance(self,chunk):
      if '?' in chunk:
-        print 'chunk is ' + chunk
+        print('chunk is ' + chunk)
         raise Exception("Use the resonance function when the chunk has no '?'. If there is a '?' use request instead")
           
      coherence = self.get_activation(chunk)
      if self.verbose:
-        print 'The coherence is ' + str(coherence)
+        print('The coherence is ' + str(coherence))
      if coherence <= self.threshold:
         self.fail(self._request_count)
      else:
@@ -515,8 +515,8 @@ class HDM(Memory):
                             subvalue = bound[key]
                         # if "value" in "?value" is undefined, raise exception
                         except:
-                            print chunk
-                            print 'Error with subvalue: ' + subvalue + ' in chunk: ' + chunk
+                            print(chunk)
+                            print('Error with subvalue: ' + subvalue + ' in chunk: ' + chunk)
                             raise Exception('Values beginning with ! are understood in this context as indicating values to be inhibited. The specified !value is undefined')
                     # add subvalue to inhibition list
                     self.inhibited.append(subvalue)
