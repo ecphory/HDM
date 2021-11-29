@@ -15,7 +15,7 @@ External links:
 
 To install HDM for use on your own computer:
 
-1. Downloaded the official Python ACT-R for Python 2 from https://github.com/tcstewar/ccmsuite
+1. Downloaded Python ACT-R from https://github.com/CarletonCognitiveModelingLab
 
 2. Download hdm.py from this repository and place it in ccmsuite/ccm/lib/actr/hdm.py
 
@@ -25,9 +25,11 @@ To install HDM for use on your own computer:
 
 5. Add the CCMSuite folder to your Python Path.
 
-6. Create a Python ACT-R model (see Python ACT-R tutorials).
+6. If you do not have numpy, install numpy at the command line: `pip install numpy` or see https://numpy.org/install/ for alternative approaches
 
-7. Instead of creating an instance of DM, create an instance of HDM in your model (see example code in this repository).
+7. Create a Python ACT-R model (see Python ACT-R tutorials).
+
+8. Instead of creating an instance of DM, create an instance of HDM in your model (see example code in this repository).
 
 USING HDM
 
