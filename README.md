@@ -3,26 +3,17 @@
 This is the repository for the Holographic Declarative Memory (HDM) module for Python ACT-R.
 
 This repository contains:
-- sample ACT-R models that use HDM
-- the HDM module itself
-- code for the Holographic Reduced Representations (HRRs)
-- conference papers that describe the theory and applications of HDM
+- documentation: a paper, conference poster, and slides that describe the theory and applications of HDM
+- example models: sample ACT-R models that use HDM
+- hdm.py the HDM module itself, which uses HRRs
+- hrr.py code for Holographic Reduced Representations (HRRs)
 
-Tutorials on how to use Python ACT-R can be found here: https://sites.google.com/site/pythonactr/home
+External links:
+- The paper on HDM can be found here: https://doi.org/10.1111/cogs.12904
+- A talk that discusses HDM and the model's future can be found here: https://www.youtube.com/watch?v=BtnUvpQg6bI
+- Tutorials on how to use Python ACT-R can be found here: https://sites.google.com/site/pythonactr/home
 
-To install HDM for use on your own computer, use one of the two following methods:
-
-EASY INSTALL
-
-1. Download the CCMSuite repository for Python 2 ACT-R and HDM from https://github.com/ecphory/ccmsuite
-
-2. Add the CCMSuite folder to your Python Path. For instructions on how to set the Python Path see this link: https://www.techwalla.com/articles/how-to-set-your-python-path
-
-3. Create a Python ACT-R model (see Python ACT-R tutorials).
-
-4. Instead of creating an instance of DM, create an instance of HDM in your model (see example code in this repository).
-
-LESS EASY INSTALL
+To install HDM for use on your own computer:
 
 1. Downloaded the official Python ACT-R for Python 2 from https://github.com/tcstewar/ccmsuite
 
