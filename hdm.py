@@ -486,14 +486,14 @@ class HDM(Memory):
         # sometimes we want to specify things not to select
         # for example, condiment:?unknown!mustard
         # means find a condiment that isn't mustard
-        if value.startswith('?') and value is not '?':
+        if value.startswith('?') and value != '?':
             first = True
             for subvalue in value.split('!'):
                 # we know the first value starts with ?, so let's substitute
                 if first:
                     first = False;
                     #check to see if it's not just a ? by itself
-                    if subvalue is '?':
+                    if subvalue == '?':
                         value = '?'
                     else:
                         try:
@@ -572,7 +572,7 @@ class HDM(Memory):
   
        
   def fail(self,request_number):
-     if self.threshold is None: 
+     if self.threshold == None: 
          time=self.maximum_time
      else:
          logodds = self.cosine_to_logodds(self.threshold)
